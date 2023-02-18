@@ -7,7 +7,7 @@ The Lancerkit SDK is a Ruby Gem that provides an easy-to-use interface for integ
 You can install the Lancerkit SDK using npm:
 
 ```bash 
-npm install lancerkit 
+gem install lancerkit 
 ``` 
 
 ## Usage

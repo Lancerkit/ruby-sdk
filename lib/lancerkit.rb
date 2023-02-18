@@ -27,15 +27,15 @@ class Lancerkit
     self.edit_contact('new', data)
   end
   
-  def edit_documents(id, data)
+  def edit_document(id, data)
     HTTParty.get(HOST + "/documents/#{id}", {body: data.to_json, headers: {authorization: @api_key, 'Content-Type': 'application/json'}})
   end
   
-  def edit_contacts(id, data)
+  def edit_contact(id, data)
     HTTParty.get(HOST + "/contacts/#{id}", {body: data.to_json, headers: {authorization: @api_key, 'Content-Type': 'application/json'}})
   end
   
-  def edit_transactions(id, data)
+  def edit_transaction(id, data)
     HTTParty.get(HOST + "/transactions/#{id}", {body: data.to_json, headers: {authorization: @api_key, 'Content-Type': 'application/json'}})
   end
   
