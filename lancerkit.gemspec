@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name        = "lancerkit"
-    s.version     = "1.0.0"
+    s.version     = "1.0.1"
     s.summary     = "Lancerkit"
     s.description = "Ruby SDK for Lancerkit API"
     s.authors     = ["Alexis Clarembeau"]

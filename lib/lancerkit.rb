@@ -7,15 +7,15 @@ class Lancerkit
     @api_key = api_key 
   end
   
-  def list_documents(sort='-date', page=0)
+  def list_documents(sort='-date', page=1)
     HTTParty.get(HOST + "/documents", {query: {sort:sort, page: page}, headers: {authorization: @api_key}})
   end
   
-  def list_contacts(sort='-date', page=0)
+  def list_contacts(sort='-date', page=1)
     HTTParty.get(HOST + "/contacts", {query: {sort:sort, page: page}, headers: {authorization: @api_key}})
   end
   
-  def list_transactions(sort='-date', page=0)
+  def list_transactions(sort='-date', page=1)
     HTTParty.get(HOST + "/transactions", {query: {sort:sort, page: page}, headers: {authorization: @api_key}})
   end
   
